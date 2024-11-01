@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #a3e635;
+}
+.link-header{
+    color: #262626;
+}
+#check{
+    display: none;
+}
+.checkbtn{
+    display: none;
+    color: #262626;
+    padding: 1rem;
+}
+nav ul {
+    display: flex;
+    gap: 1.1em;
+    padding: 1em;
+  }
+ul {
+  list-style: none;
+  padding: 0px;
+}
+a {
+  text-decoration: none;
+}
+
+nav ul {
+  color: #262626;
+}
+header a i {
+  color: #262626;
+  padding: 0.5em;
+  font-size: 3em;
+}
+h2,h3 ,p{
+    margin: 0px;
+}
+.seccion-1 {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+.acerca-de {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  gap: 1em;
+  width: 400px;
+}
+.seccion-3{
+    padding: 1em;
+
+}
+.container-articulos {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  justify-content: space-evenly;
+  margin-bottom: 40px;
+}
+article {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.article-image {
+  width: 100%;
+  border-radius: 20px;
+}
+.titulo {
+  color: #b59a61;
+}
+.leer-mas {
+  color: #b59a61;
+  font-weight: bold;
+}
+footer {
+  padding: 1em;
+  background-color: #a3e635;
+}
+.titulo-contacto {
+}
+.fixed {
+  position: fixed;
+  bottom: 22px;
+  right: 39px;
+}
+.corazon {
+  color: red;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    position: fixed;
+    width: 100%;
+    background-color: #262626;
+    height: 100vh;
+    text-align: center;
+    top: 80px;
+    left: 100%;
+    transition: all 0.5s;
+  }
+  #check:checked ~ ul{
+    left: 0;
+    display: block;
+
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  .link-header{
+    color: white;
+    font-size: 20px;
+}
+  .acerca-de{
+    text-align: left;
+    align-items: center;
+  }
+  .titulo{
+    text-align: center;
+  }
+  article{
+    padding: 1em;
+  }
+  article h3{
+    text-align: center;
+
+  }
+  .container-articulos{
+    gap: 1em;
+  }
+  .container-redes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+.checkbtn{
+    font-size: 25px;
+    display: block;
+    color: #262626;
+    cursor: pointer;
+}
+
+
+}
